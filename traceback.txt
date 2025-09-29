@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/day1.rpy", line 15, in script
+    $ lock_skipping()
+  File "game/day1.rpy", line 15, in <module>
+    $ lock_skipping()
+      ~~~~~~~~~~~~~^^
+  File "game/day1.rpy", line 6, in lock_skipping
+    renpy.block_event('skip')
+    ^^^^^^^^^^^^^^^^^        
+AttributeError: module 'renpy.exports' has no attribute 'block_event'
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/day1.rpy", line 15, in script
+    $ lock_skipping()
+  File "renpy/ast.py", line 1187, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1260, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/day1.rpy", line 15, in <module>
+    $ lock_skipping()
+      ~~~~~~~~~~~~~^^
+  File "game/day1.rpy", line 6, in lock_skipping
+    renpy.block_event('skip')
+    ^^^^^^^^^^^^^^^^^        
+AttributeError: module 'renpy.exports' has no attribute 'block_event'
+
+Windows-10-10.0.19045-SP0 AMD64
+Ren'Py 8.4.1.25072401
+The More You Give .. The More You Gain 1.0
+Mon Sep 29 23:29:51 2025
