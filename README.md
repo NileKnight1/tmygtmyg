@@ -1,5 +1,5 @@
-# tmygtmyg
-The More You Give .. The More You Gain
+# The More You Give .. The More You Gain
+
 
 A visual novel game,
 I created it using RenPy, it was my first time to use it but it's so cute and easy
